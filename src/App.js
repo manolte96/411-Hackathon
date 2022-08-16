@@ -15,8 +15,9 @@ function App() {
         console.log(data.hits);
         setList(data.hits);
       });
-  }, []);
+      
 
+  }, []);
   return (
     <div className="App">
       <Header />
