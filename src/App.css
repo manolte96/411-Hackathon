@@ -2,45 +2,31 @@
   box-sizing: border-box;
 }
 .App {
-  text-align: left;
-  background-color: rgb(246,246,239);
-  font-family: Arial, Helvetica, sans-serif;
-}
-.TitleContainer {
-  display: flex;
-  justify-content: left;
-  padding: 5px;
-}
-.Links {
-font-weight: 100;
-color: rgb(130, 130, 130);
+  text-align: center;
 }
 
 .header {
   background-color: #ff742a;
-  height: 50px;
+  height: 80px;
   padding: 10px;
-  font-size: 15px;
+  font-size: 17px;
   border: 1px solid grey;
   width: 100%;
   display: flex;
 }
-
 a {
   text-decoration: none;
   color: black;
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  font-size: 20px;
 }
 
-a:hover{
-  text-decoration: underline;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.SearchHeaderContainer{
+.SearchHeaderContainer {
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -57,18 +43,20 @@ a:hover{
 }
 
 .SearchHeader_label {
-  font-size: larger;
-  text-align: center;
-  margin-right: 10px;
+  font-size: large;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 25px;
 }
 
 .SearchHeader_container {
   background-color: white;
-  margin-right: 16px;
+  width: 100%;
 }
 
 .SearchInput {
-  width: 900px;
+  width: 100%;
   height: 50px;
   background-color: white;
   stroke: none;
@@ -76,13 +64,19 @@ a:hover{
   padding: 16px 144px 16px 54px;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.75);
+  font-size: medium;
+  margin-top: 5px;
+}
+
+.SearchInput:focus{
+  outline: none;
 }
 
 .SearchIcon {
   background-color: white;
   position: absolute;
   margin-left: 15px;
-  margin-top: 10px;
+  margin-top: 15px;
   color: #ff742b;
   font-size: 24px;
   pointer-events: none;
@@ -90,40 +84,19 @@ a:hover{
 
 .SearchHeader_settings {
   color: black;
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 .SearchHeader_settings svg {
   margin: 8px;
+  margin-left: 20px;
 }
 
 .Settings {
   margin-top: 12px;
 }
 
-<<<<<<< HEAD
-h2 {
-  padding-left: 10px;
-}
-
-h5 {
-  padding-left: 10px ;
-  padding-right: 10px;
-  font-weight: 150;
-  margin: 1px;
-  margin-top: 10px;
-}
-
-h6 {
-  font-weight: 100;
-  margin: 1px;
-  align-self: center;
-}
-
-/* h4:hover {
-text-decoration-line: underline 
-}; */
-
-=======
 .app-container {
   display: flex;
   flex-direction: column;
@@ -134,6 +107,9 @@ text-decoration-line: underline
   width: 100%;
   margin: 0;
   overflow-y: scroll;
+  background-color: rgb(246,246,239);
+  font-family: Verdana, Tahoma, sans-serif;
+  font-weight: normal;
 }
 
 .div-display-container {
@@ -141,13 +117,14 @@ text-decoration-line: underline
   flex-direction: column;
   flex-wrap: wrap;
   align-items: left;
-  width: 90%;
+  width: 95%;
 }
 
 .story-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  text-transform: inherit;
   /* align-items: left; */
 }
 
@@ -159,13 +136,14 @@ text-decoration-line: underline
 h3 {
   font-size: 14px;
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 .url {
   align-self: flex-end;
   flex-wrap: wrap;
   font-size: 13px;
-  color: lightslategray;
+  color: rgb(113, 112, 112);
   margin-left: 5px;
 }
 
@@ -189,4 +167,3 @@ h3 {
 .story-bar a:not(:first-child) {
   margin-left: 4px;
 }
->>>>>>> 51972858d80b88ffc6266f673ba347f61ab7b754
